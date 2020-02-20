@@ -1,4 +1,6 @@
 const redis2json = (input) => {
+    input = String(input);
+
     // cache input type so we don't perform operation twice
     const type = input.match(/\[(.*?)\]/g);
     const matches = type ? type : input.split(',').splice(1, input.length);
@@ -28,8 +30,8 @@ const redis2json = (input) => {
         }
     }
 
-    const result = type ? { [base]: nestedTransformed } : { [base]: transformed };
-    return JSON.stringify(result);
+    const result = type ? {[base]: nestedTransformed}: {[base]: transformed};
+    return JSON.stringify(result).trim();
 }
 
 module.exports = redis2json;
