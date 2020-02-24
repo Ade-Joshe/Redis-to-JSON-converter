@@ -15,7 +15,7 @@ const redis2json = (input) => {
             const key = i;
             const value = i + 1;
 
-            transformed[matches[key]] = matches[value];
+            transformed = { ...transformed, ...{[matches[key]]: matches[value]} };
             i += 1
         } else {
             const token = matches[i].replace('[', '').replace(']', '').split(',');
@@ -23,7 +23,7 @@ const redis2json = (input) => {
                 const key = a;
                 const value = a + 1;
 
-                transformed[token[key]] = token[value];
+                transformed = { ...transformed , ...{[token[key]]: token[value]} };
             }
 
             nestedTransformed.push(transformed);
@@ -31,7 +31,7 @@ const redis2json = (input) => {
     }
 
     const result = type ? {[base]: nestedTransformed}: {[base]: transformed};
-    return JSON.stringify(result).trim();
+    return JSON.stringify(result);
 }
 
 module.exports = redis2json;
