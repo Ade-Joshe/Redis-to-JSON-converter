@@ -1,4 +1,4 @@
-const redis2json = (input) => {
+const redistojson = (input) => {
     input = String(input);
 
     // cache input type so we don't perform operation twice
@@ -31,7 +31,7 @@ const redis2json = (input) => {
     }
 
     const result = type ? {[base]: nestedTransformed}: {[base]: transformed};
-    return JSON.stringify(result);
+    return result;
 }
 
-module.exports = redis2json;
+module.exports = redistojson;
