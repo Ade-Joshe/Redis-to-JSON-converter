@@ -1,5 +1,5 @@
 {
-  "name": "Redis2JSON",
+  "name": "redistojson",
   "version": "1.0.0",
   "description": "Converts Redis data to JSON representation",
   "main": "index.js",
@@ -15,8 +15,12 @@
     "type": "git",
     "url": "git+https://github.com/Ade-Joshe/Redis-to-JSON-converter.git"
   },
-  "keywords": ["Redis", "Json", "Converter"],
-  "author": "",
+  "keywords": [
+    "Redis",
+    "Json",
+    "Converter"
+  ],
+  "author": "Joshua, Augustinebest",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Ade-Joshe/Redis-to-JSON-converter/issues"
