@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="img/redistojson.png" alt="redistojson" width="300"/>
+    <img src="https://res.cloudinary.com/wrightway/image/upload/v1582575333/redistojson.png" alt="redistojson" width="300"/>
 </div>
 # Redis-to-JSON-converter
 Converts Redis data to JSON representation
