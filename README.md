@@ -6,7 +6,7 @@ Converts Redis data to JSON representation
 
 For those seeking a means to convert redis "string" data to JSON object for easy parsing.
 
-Special Thanks to my friend, [Augustine Best](https://twitter.com/augustinebest_) and also [Jerry](https://twitter.com/lovinjerry004) for their amazing contributions.
+Special Thanks to my friend, [Augustine Best](https://twitter.com/augustinebest_) and also [Jerry](https://twitter.com/lovinjerry004) for their amazing contributions and My boss Okoye Emmanuel for tasking us with the solution to the pending redis problem. it's good to work with great minds [@geneystechhub](https://twitter.com/genesystechhub)
 
 ### **How to use**
 **step 1:** Install reformat-date
